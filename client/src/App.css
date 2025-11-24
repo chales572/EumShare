@@ -1,0 +1,99 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  background: var(--surface-color);
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo-text {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.toolbar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  background: var(--surface-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-connected {
+  background-color: #E8F8F5;
+  color: var(--success-color);
+}
+
+.status-waiting {
+  background-color: #FDEDEC;
+  color: var(--danger-color);
+}
+
+.control-indicator {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.control-active {
+  background-color: #E8F8F5;
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+.control-inactive {
+  background-color: #FDEDEC;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #F4F6F7;
+}
+
+.btn-accent {
+  background-color: var(--secondary-color);
+}
+
+.btn-accent:hover {
+  background-color: #D35400;
+}
