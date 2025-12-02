@@ -54,10 +54,10 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 3001;
-const HOST = process.env.HOST || '0.0.0.0';
 
-server.listen(PORT, HOST, () => {
-  console.log(`Signaling server running on ${HOST}:${PORT}`);
+// Railway doesn't need HOST binding, it handles it automatically
+server.listen(PORT, () => {
+  console.log(`Signaling server running on port ${PORT}`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`Allowed origins: ${allowedOrigins.join(', ')}`);
 });

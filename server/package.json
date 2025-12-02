@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "vercel-build": "echo 'Building for Vercel...'"
+  },
+  "engines": {
+    "node": ">=18.x"
   },
   "dependencies": {
     "cors": "^2.8.5",
